@@ -1,6 +1,6 @@
 import React from 'react';
 import { BsTwitter, BsInstagram } from 'react-icons/bs';
-import { BsFacebook, FaFacebook } from 'react-icons/fa';
+import { FaFacebook } from 'react-icons/fa';
 
 const SocialMedia = () => {
   return (
