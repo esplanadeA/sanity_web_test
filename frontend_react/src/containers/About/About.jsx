@@ -16,7 +16,6 @@ const About = () => {
       setAbouts(data);
     });
   }, []);
-  console.log(abouts);
 
   //   const abouts = [
   //     {
