@@ -42,8 +42,8 @@ const Skills = () => {
                 style={{ backgroundColor: skill.bgColor }}
               >
                 <img src={urlFor(skill.icon)} alt={skill.title} />
-                <p className="p-text">{skill.name}</p>
               </div>
+              <p className="p-text">{skill.name}</p>
             </motion.div>
           ))}
         </motion.div>
@@ -52,4 +52,4 @@ const Skills = () => {
   );
 };
 
-export default AppWrap(Skills, 'skill');
+export default AppWrap(Skills, 'skills');
