@@ -1,17 +1,29 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './About.scss';
 import { HiMenuAlt4, HiX } from 'react-icons/hi';
 import { motion } from 'framer-motion';
 import { images } from '../../constants/index';
+import { urlFor, client } from '../../client';
 
 const About = () => {
-  const abouts = [
-    {
-      title: 'web development',
-      description: 'i am a good web developer',
-      imgUrl: images.about01,
-    },
-  ];
+  const [abouts, setAbouts] = useState([]);
+
+  useEffect(() => {
+    const query = '*[_type=="abouts"]';
+    client.fetch(query).then((data) => {
+      setAbouts(data);
+    });
+  }, []);
+  console.log(abouts);
+
+  //   const abouts = [
+  //     {
+  //       title: 'web development',
+  //       description: 'i am a good web developer',
+  //       imgUrl: images.about01,
+  //     },
+  //   ];
+
   return (
     <>
       <h2 className="head-text">
