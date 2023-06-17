@@ -15,18 +15,19 @@ const Header = () => {
     },
   };
   return (
-    <div className="app__header app__flex">
+    <div id="home" className="app__header app__flex">
       <motion.div
         whileInView={{ x: [-100, 0], opacity: [0, 1] }}
         transition={{ duration: 0.5 }}
         className="app__header-info"
       >
         <div className="app__header-badge">
-          <div className="badge-cmp app__flex"></div>
-          <span>👋</span>
-          <div style={{ marginLeft: 20 }}>
-            <p className="p-text">Hello, I am</p>
-            <h1 className="head-text">Anna Li</h1>
+          <div className="badge-cmp app__flex">
+            <span>👋</span>
+            <div style={{ marginLeft: 20 }}>
+              <p className="p-text">Hello, I am</p>
+              <h1 className="head-text">Anna Li</h1>
+            </div>
           </div>
           <div className="tag-cmp app__flex">
             <p className="p-text">Web Developer</p>
@@ -34,6 +35,7 @@ const Header = () => {
           </div>
         </div>
       </motion.div>
+
       <motion.div
         whileInView={{ x: [-100, 0], opacity: [0, 1] }}
         transition={{ duration: 0.5, delayChildren: 0.5 }}
