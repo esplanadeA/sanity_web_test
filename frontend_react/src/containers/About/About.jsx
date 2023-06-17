@@ -3,6 +3,8 @@ import './About.scss';
 import { HiMenuAlt4, HiX } from 'react-icons/hi';
 import { motion } from 'framer-motion';
 import { images } from '../../constants/index';
+import AppWrap from '../../wrapper/AppWrap';
+
 import { urlFor, client } from '../../client';
 
 const About = () => {
@@ -14,7 +16,6 @@ const About = () => {
       setAbouts(data);
     });
   }, []);
-  console.log(abouts);
 
   //   const abouts = [
   //     {
@@ -54,4 +55,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AppWrap(About, 'about');

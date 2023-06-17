@@ -14,7 +14,6 @@ const SocialMedia = () => {
       <div>
         <BsInstagram />
       </div>
-      SocialMedia
     </div>
   );
 };
