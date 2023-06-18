@@ -8,14 +8,14 @@ import { client } from '../../client';
 
 const Footer = () => {
   const [formData, setFormData] = useState({
-    name: '',
+    username: '',
     email: '',
     message: '',
   });
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  const { name, email, message } = formData;
+  const { username, email, message } = formData;
 
   function handleChangeInPut(e) {
     const { name, value } = e.target;
@@ -26,9 +26,9 @@ const Footer = () => {
     setLoading(true);
     const contact = {
       _type: 'contact',
-      name: name,
-      email: email,
-      message: message,
+      name: formData.username,
+      email: formData.email,
+      message: formData.message,
     };
 
     client
@@ -75,8 +75,8 @@ const Footer = () => {
               className="p-text"
               type="name"
               placeholder="You Name"
-              name="name"
-              value={name}
+              name="username"
+              value={username}
               onChange={handleChangeInPut}
             />
           </div>
@@ -99,7 +99,7 @@ const Footer = () => {
               onChange={handleChangeInPut}
             ></textarea>
           </div>
-          <button type="button" className="p-text" onclick={handleSubmit}>
+          <button type="button" className="p-text" onClick={handleSubmit}>
             {loading ? 'Sending' : 'Send Message'}
           </button>
         </div>
