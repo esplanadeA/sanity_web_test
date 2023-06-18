@@ -20,8 +20,6 @@ const Work = () => {
     });
   }, []);
 
-  console.log(works);
-
   function handleWorkFilter(item) {
     setActiveFilter(item);
     setAnimateCard([{ y: 100, opacity: 0 }]);
