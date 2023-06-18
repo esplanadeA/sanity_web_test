@@ -5,8 +5,7 @@ import { motion } from 'framer-motion';
 import { images } from '../../constants/index';
 import { urlFor, client } from '../../client';
 
-import AppWrap from '../../wrapper/AppWrap';
-
+import { AppWrap, MotionWrap } from '../../wrapper';
 import './Skills.scss';
 
 const Skills = () => {
@@ -88,4 +87,8 @@ const Skills = () => {
   );
 };
 
-export default AppWrap(Skills, 'skills');
+export default AppWrap(
+  MotionWrap(Skills, 'app__skills'),
+  'skill',
+  'app__whitebg'
+);
