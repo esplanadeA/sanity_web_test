@@ -31,7 +31,7 @@ const Skills = () => {
       <div className="app__skills-container">
         <motion.div className="app__skills-list">
           <div className="app__skill_tag">
-            {['Frontend', 'Backend', 'OtherSkills'].map((item, exIndex) => (
+            {['Frontend', 'Backend', 'Other'].map((item, exIndex) => (
               <div
                 key={exIndex}
                 className={`app__flex p-text 
