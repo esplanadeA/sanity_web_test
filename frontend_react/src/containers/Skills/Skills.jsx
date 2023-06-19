@@ -30,15 +30,11 @@ const Skills = () => {
       <h2 className="head-text">Skills & experience</h2>
       <div className="app__skills-container">
         <motion.div className="app__skills-list">
-          <div className="app__skill_tag">
+          <div className="app__skill-tag">
             {['Frontend', 'Backend', 'Other'].map((item, exIndex) => (
-              <div
-                key={exIndex}
-                className={`app__flex p-text 
-              `}
-              >
-                <p className="p-text">{item}</p>
-                <div className='app__flex"'>
+              <div key={exIndex} className="app__skill-tag-list">
+                <p className="p-text app__skill-tag">{item}</p>
+                <div className="app__skills-items">
                   {skills
                     .filter((skill) => skill.tag === item)
                     .map((skill, skillIndex) => (
