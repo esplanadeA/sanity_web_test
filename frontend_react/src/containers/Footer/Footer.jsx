@@ -42,7 +42,7 @@ const Footer = () => {
 
   return (
     <>
-      <h2 className="heat-text">Take A coffe & chat with me</h2>
+      <h2 className="heat-text">Take A coffee & chat with me</h2>
       <div className="app__footer-cards">
         <div className="app__footer-card">
           <img src={images.location} alt="location" />
