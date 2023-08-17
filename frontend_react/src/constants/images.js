@@ -35,6 +35,7 @@ import nb from '../assets/nb.png';
 import skype from '../assets/skype.png';
 import spotify from '../assets/spotify.png';
 import location from '../assets/location.png';
+import resume from '../assets/Resume_Anna_Li.pdf';
 
 export default {
   location,
@@ -71,4 +72,5 @@ export default {
   nb,
   skype,
   spotify,
+  resume,
 };

@@ -51,6 +51,9 @@ const About = () => {
           </motion.div>
         ))}
       </div>
+      <a href={images.resume} download="Resume_Anna_Li">
+        <button className="Resume_button">Click for My Resume</button>
+      </a>
     </>
   );
 };
